@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Box Model</title>
+
+	<style>
+		/* El selector de asterisco (* o universal) hace que todos los elemwntos pueden cargas los cambio que se le han asignado sin necesidad que hereden de los demás selectores  */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: gray;
+		}
+
+		#box {
+		  background-color: blue;
+		  padding: 10px;
+		  /*padding: 10px 10px 10px 10px;*/
+		  border: 5px solid black;
+		  /*margin: 40px; 40px en cada lado (arriba, derecha, abajo e izquierda*/
+		  width: 300px;
+		  height: 50px;
+		  margin-top: 40px;
+		  overflow: auto; /*Desbordamiento: crea una barra de desplazamiento para ver todo el contenido. Propiedad scroll, hace que hayan 2 barras de desplazamiento (abajo y derecha */
+
+		}
+
+		#content {
+		  background-color: #90EE90; /*green*/
+		}
+
+		h1 {
+		  margin-bottom: 30px;
+		}
+
+	</style>
+</head>
+<body>	
+	<h1>Box Model</h1>
+
+	<div id="box">
+	  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis.</div>
+	</div>
+
+</body>
+</html>
