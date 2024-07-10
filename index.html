@@ -6,20 +6,39 @@
 	<title>Hello Coursera!</title>
 
 	<style type="text/css"> 
+		* {
+			box-sizing: border-box;
+		}
+
+		div {
+			width: 50%;
+			border: 1px solid black;
+			float: left;
+			padding: 10px;
+		}
+
+		#div-left {
+			background-color: skyblue;
+		}
+
+		#div-right {
+			background-color: yellowgreen;
+		}
+		
+		/*section {
+			clear: right;
+		}*/
+		
 		h1 {
 			color: green;
 			font-size: 36px;
 			text-align: center;
 		}
 
-		aside, p {
+		p {
 			color: blueviolet;
 			font-size: 20px;
 			width: 200px;			
-		}
-
-		.itzel, p {
-			text-align: center;
 		}
 	</style>
 </head>
@@ -28,8 +47,8 @@
 
 	<p>Hello Coursera! </p>
 
-	<aside>
-		<div>
+	<div>
+		<div id="div-left">
 			<a href="ejemplos/Lectura-04/div-and-span.html">Div and Span</a><br>
 			<a href="ejemplos/Lectura-04/doc-structure-before.html">Doc Structure Before</a><br>
 			<a href="ejemplos/Lectura-04/headings.html">Heading</a><br>
@@ -54,8 +73,18 @@
 			<a href="ejemplos/Lectura-04/font-size-before.html">Setting Font Size</a><br>
 			<a href="ejemplos/Lectura-04/box-model-before.html">Box Model</a><br>
 			<a href="ejemplos/Lectura-04/background-before.html">Background</a><br>
+			<a href="ejemplos/Lectura-04/floating-before.html">Floating Elements</a><br>
+			<a href="ejemplos/Lectura-04/two-column-before.html">Two Column Design</a><br>
+			<a href="ejemplos/Lectura-04/positioning-before.html">Positioning Elements</a><br>
+
 		</div>
-	</aside>
+		<div id="div-right">
+			<a href="ejemplos/Lectura-04/media-queries-before.html">Media Queries</a><br>
+			<a href="ejemplos/Lectura-04/responsive-before.html">Responsive Layout</a><br>
+			
+		</div>
+
+	</div>
 
 	<!--
 		Origin Precedence: es una regla muy simple
