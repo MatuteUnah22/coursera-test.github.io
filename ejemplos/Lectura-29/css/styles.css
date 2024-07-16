@@ -1,0 +1,160 @@
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;
+}
+
+/* -------------------- HEADER -------------------- */
+#header-nav {
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img {
+	background: url('../images/restaurant-logo_large.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+	padding-top: 25; /* Se empujara hacia arriba un poquito */
+}
+
+.navbar-brand h1 { /* Restaurant name */
+	font-family: 'lora', serif;
+	color: #557c3e;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none; /* Eliminara la decoración del subrayado del enlace */
+}
+
+.navbar-brand p { /* Kosher cert */
+	color: #000;
+	text-transform: uppercase;
+	font-size: .7em; /* Redicir un poco el tamaño */
+	margin-top: 15px;
+}
+
+.navbar-brand p span { /* Star-K */
+	vertical-align: middle; /* Se alineara al centro de la imagen */
+}
+
+#nav-list {
+	margin-top: 10px;
+}
+
+/* Menú de los iconos del navbar*/
+#nav-list a {
+	color: #951C49;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background: E7E7E7;
+}
+
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+#phone {
+	margin-top: 5px;
+}
+
+#phone a { /* Phone number */
+	text-align: right;
+	padding-bottom: 0;
+}
+
+#phone div { /* We Deliver */
+	color: #557c3e;
+	text-align: right;
+	padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid#61122f;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+
+/* -------------------- /HEADER -------------------- */
+
+/* -------------------- CONSULTAS MULTIMEDIAS -------------------- */
+/***** Large devices only *****/
+@media (min-width:1200px) {
+	/* HEADER */
+	/* /HEADER */
+}
+/***** /Large devices only *****/
+
+/***** Medium devices only *****/
+@media (min-width:992px) and (max-width: 1199px) {
+	/* HEADER */
+	#logo-img {
+		background: url('../images/restaurant-logo_medium.png') no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 5px 5px 5px 0;
+	}
+	/* /HEADER */
+}
+/***** /Medium devices only *****/
+
+/***** Small devices only *****/
+@media (min-width:768px) and (max-width: 991px) {
+	/* HEADER */
+	/* /HEADER */
+}
+/***** /Small devices only *****/
+
+/***** Extra Small devices only *****/
+@media (max-width: 767px) {
+	/* HEADER */
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+
+	.navbar-brand h1 { /* Restaurant name */
+		padding-top: 10px;
+		font-size: 5vw; /* vw: significa ancho de la ventana gráfica y una unidad. 1vw = equivale 1% de ancho de la ventana gráfica. A medida que la pantalla se estire y/o se encoja, el tamaño de la fuente dependera del ancho de la pantalla. */
+	}
+
+	.navbar-brand p { /* Kosher cert */
+		font-size: .6em;
+		margin-top: 12px;
+	}
+
+	.navbar-brand p img { /* Star-K */
+		height: 20px;
+	}
+
+	#collapsable-nav a { /* Collapsed nav menu glyph */
+		font-size: 1.2em;
+	}
+
+	#collapsable-nav a span { /* Collapsed nav menu glyph */
+		font-size: 1em;
+		margin-right: 5px;
+	}
+
+	/* /HEADER */
+}
+/***** /Extra Small devices only *****/
+
+/* -------------------- /CONSULTAS MULTIMEDIAS -------------------- */
