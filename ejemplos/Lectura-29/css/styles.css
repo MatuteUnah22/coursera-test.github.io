@@ -84,7 +84,7 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-	border: 1px solid#61122f;
+	border: 1px solid #61122f;
 }
 
 .navbar-header button.navbar-toggle {
@@ -94,37 +94,158 @@ body {
 
 /* -------------------- /HEADER -------------------- */
 
+/* -------------------- MAIN-CONTENT -------------------- */
+.container .jumbotron {
+	box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid #3F0C1F;	
+}
+
+#menu-tile, #specials-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px; /*Margen inferior sea de 15px*/
+	position: relative; /*No movera el estilo a ningún lado, ya que establecerá algo parecido a un ancla*/
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+	background: url('../images/menu-tile.jpg') no-repeat;
+	background-position: center;
+}
+
+#specials-tile {
+	background: url('../images/specials-tile.jpg') no-repeat;
+	background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0; /* lo posicionará hasta la parte inferior de elemento */
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em; /* aumenta el tamaño de la fuente un 60% (1.6em */
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+/* -------------------- /MAIN-CONTENT -------------------- */
+
+/* -------------------- FOOTER -------------------- */
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+
+#hours, #address {
+	line-height: 2;
+}
+
+#hours > span, #address > span {
+	font-size: 1.3em;
+}
+
+#address p {
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8;
+}
+
+#testimonials {
+	font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+	margin-top: 25px;
+}
+/* -------------------- /FOOTER -------------------- */
+
 /* -------------------- CONSULTAS MULTIMEDIAS -------------------- */
 /***** Large devices only *****/
 @media (min-width:1200px) {
-	/* HEADER */
-	/* /HEADER */
+	/* -------------------- HEADER -------------------- */
+	/* -------------------- /HEADER -------------------- */
+
+	/* -------------------- MAIN-CONTENT -------------------- */
+	.container .jumbotron {
+		background: url('../images/jumbotron_1200.jpg') no-repeat;
+		height: 675px;
+	}
+
+	/* -------------------- /MAIN-CONTENT -------------------- */
+
+	/* -------------------- FOOTER -------------------- */
+	
+	/* -------------------- /FOOTER -------------------- */
 }
 /***** /Large devices only *****/
 
 /***** Medium devices only *****/
 @media (min-width:992px) and (max-width: 1199px) {
-	/* HEADER */
+	/* -------------------- HEADER -------------------- */
 	#logo-img {
 		background: url('../images/restaurant-logo_medium.png') no-repeat;
 		width: 100px;
 		height: 100px;
 		margin: 5px 5px 5px 0;
 	}
-	/* /HEADER */
+	/* -------------------- /HEADER -------------------- */
+
+	/* -------------------- MAIN-CONTENT -------------------- */
+	.container .jumbotron {
+		background: url('../images/jumbotron_992.jpg') no-repeat;
+		height: 558px;
+	}
+
+	/* -------------------- /MAIN-CONTENT -------------------- */
+
+	/* -------------------- FOOTER -------------------- */
+	
+	/* -------------------- /FOOTER -------------------- */
 }
 /***** /Medium devices only *****/
 
 /***** Small devices only *****/
-@media (min-width:768px) and (max-width: 991px) {
-	/* HEADER */
-	/* /HEADER */
+@media (min-width:768px) and (max-width: 991.20px) {
+	/* -------------------- HEADER -------------------- */
+	/* -------------------- /HEADER -------------------- */
+
+	/* -------------------- MAIN-CONTENT -------------------- */
+	.container .jumbotron {
+		background: url('../images/jumbotron_768.jpg') no-repeat;
+		height: 432px;
+	}
+
+	/*#menu-tile, #specials-tile {
+		width: 360px;
+		margin: 0 auto 15px;
+	}*/
+
+	/* -------------------- /MAIN-CONTENT -------------------- */
+
+	/* -------------------- FOOTER -------------------- */
+	
+	/* -------------------- /FOOTER -------------------- */
 }
 /***** /Small devices only *****/
 
 /***** Extra Small devices only *****/
-@media (max-width: 767px) {
-	/* HEADER */
+@media (max-width: 767.20px) {
+	/* -------------------- HEADER -------------------- */
 	.navbar-brand {
 		padding-top: 10px;
 		height: 80px;
@@ -153,7 +274,73 @@ body {
 		margin-right: 5px;
 	}
 
-	/* /HEADER */
+	#call-btn > a {
+		font-size: 1.5em;
+		display: block;
+		margin: 0 20px;
+		padding: 10px;
+		border: 2px solid #fff;
+		background-color: #f6b319;
+		color: #951c49;
+	}
+
+	#xs-deliver {
+		margin-top: 5px;
+		font-size: .7em;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+	}
+	/* -------------------- /HEADER -------------------- */
+
+	/* -------------------- MAIN-CONTENT -------------------- */
+	.container .jumbotron {
+		margin-top: 30px;
+		padding: 0;
+	}
+
+	#menu-tile, #specials-tile {
+		width: 360px;
+		margin: 0 auto 15px;
+	}
+
+	/* -------------------- /MAIN-CONTENT -------------------- */
+
+	/* -------------------- FOOTER -------------------- */
+	.panel-footer section {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.panel-footer section:nth-child(3) {
+		margin-bottom: 0; /* margin already exists on the wholes row */
+	}
+
+	.panel-footer section hr {
+		width: 50%;
+	}
+	
+	/* -------------------- /FOOTER -------------------- */
+}
+/***** /Extra Small devices only *****/
+
+/***** Super Extra Small devices only (Ej.: Mobile s)*****/
+@media (max-width: 320px) {
+	/* -------------------- HEADER -------------------- */
+	.navbar-brand h1 { /* Restaurant name */
+		padding-top: 5px;
+		font-size: 6vw; /* vw: significa ancho de la ventana gráfica y una unidad. 1vw = equivale 1% de ancho de la ventana gráfica. A medida que la pantalla se estire y/o se encoja, el tamaño de la fuente dependera del ancho de la pantalla. */
+	}
+	/* -------------------- /HEADER -------------------- */
+	/* -------------------- MAIN-CONTENT -------------------- */
+	#menu-tile, #specials-tile {
+		width: 290px;
+		margin: 0 auto 15px;
+	}
+	/* -------------------- /MAIN-CONTENT -------------------- */
+
+	/* -------------------- FOOTER -------------------- */
+	
+	/* -------------------- /FOOTER -------------------- */
 }
 /***** /Extra Small devices only *****/
 
