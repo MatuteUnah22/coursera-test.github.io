@@ -1,0 +1,2 @@
+davidGreeter.sayHello();
+matuteGreeter.sayHi();
