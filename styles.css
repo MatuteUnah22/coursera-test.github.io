@@ -123,13 +123,16 @@ body {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    text-decoration: none;
     border: 1px solid #e0e0e0;
     transition: 0.3s;
 }
 
 .skill-card:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill-card a {
+    text-decoration: none;
 }
 
 /* Projects */
