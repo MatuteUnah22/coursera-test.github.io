@@ -123,6 +123,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    text-decoration: none;
     border: 1px solid #e0e0e0;
     transition: 0.3s;
 }
