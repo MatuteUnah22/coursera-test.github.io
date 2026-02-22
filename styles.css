@@ -68,7 +68,7 @@ body {
 
 /* Hero */
 .hero {
-    background: #1e3a8a;
+    background: #286bcf;
     color: white;
     padding: 80px 0 120px; /* 🔥 quitamos padding lateral */
     text-align: center;
@@ -139,13 +139,82 @@ body {
     background: white;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e3a8a;
-    color: white;
+/*                                                             ===== Footer Responsive ===== */
+.footer {
+    position: relative;
+    width: 100%;
+    background: #286bcf;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-element {
+    list-style: none;
+}
+
+.icon-element {
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.icon-element:hover {
+    /* Ea para cuando pase el cursor por encima de los iconos, tenga la animación hacía arriba */
+    transform: translateY(-10px); 
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-element {
+    list-style: none;
+}
+
+.menu-icon {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.menu-icon:hover {
+    opacity: 1;
+}
+
+/* Texto de los derechos reservados */
+.text {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+/*                                                             ===== /Footer Responsive ===== */
+
 
 /* ===== Navbar Responsive ===== */
 
@@ -222,7 +291,7 @@ footer {
     }
 
     .hero {
-        background: #1e3a8a;
+        background: #286bcf;
         color: white;
         padding: 195px 0 60px; /* 🔥 quitamos padding lateral */
         text-align: center;
