@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+
+    <body>
+        <div class="login">
+            <h2>Ingreso al sistema</h2>
+
+            <form action="php/login.php" method="POST">
+                <input type="text" name="usuario" placeholder="Usuario" required focus>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </body>
+</html>
+

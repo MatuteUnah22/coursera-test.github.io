@@ -1,0 +1,97 @@
+<?php
+    include "php/conexion.php";
+
+    if(!isset($_SESSION['usuario'])){
+        header("Location:index.php");
+    }
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Panel de control</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="sidebar">
+            <h2>Panel</h2>
+            <!-- <a href="#">Inicio</a> -->
+            <a href="historial.php">Historial</a>
+            <a href="logout.php">Cerrar sesión</a>
+        </div>
+
+        <div class="content">
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <!-- <h1 class="sistema">Sistema de mantenimiento escolar del Politécnico Antonio Figaris Báes</h1> -->
+            <h1 class="sistema">Sistema de mantenimiento escolar P.A.F.B.</h1>
+            <div class="card form-card">
+                <h2>Nuevo reporte</h2>
+                <br>
+
+                <form action="php/guardar_reporte.php" method="POST" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label>Área</label>
+                        <input type="text" name="area" placeholder="Ej: Laboratorio, Aula 3..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Descripción</label>
+                        <textarea name="descripcion" placeholder="Describe el problema..." required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Prioridad</label>
+                            <select name="prioridad">
+                                <option>Alta</option>
+                                <option>Media</option>
+                                <option>Baja</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Fecha</label>
+                            <input type="date" name="fecha" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Imagen (opcional)</label>
+                        <input type="file" name="imagen">
+                    </div>
+
+                    <div class="botones">
+                        <button type="submit" class="btn-primary">Guardar reporte</button>
+                        <button type="button" class="btn-primary" onclick="generarPDF()">Reporte PDF</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>
+                © 2026 Sistema de mantenimiento escolar - Instituto Politécnico Antonio Figaris Báez  
+                | Desarrollado por Grupo 5 de I.N.F: 5to "A"
+            </p>
+        </footer>
+        <script src="js/script.js">
+            function toggleMenu() {
+                document.querySelector('.sidebar').classList.toggle('active');
+            }
+
+            // Cerrar al hacer click fuera
+            document.addEventListener('click', function(e) {
+                const sidebar = document.querySelector('.sidebar');
+                const button = document.querySelector('.menu-btn');
+
+                if (!sidebar.contains(e.target) && !button.contains(e.target)) {
+                    sidebar.classList.remove('active');
+                }
+            });
+        </script>
+    </body>
+</html>

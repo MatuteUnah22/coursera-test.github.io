@@ -1,0 +1,381 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #656464;
+} 
+/*
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+} */
+
+/* =================                        LOGIN ================= */
+.login {
+    width: 350px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+}
+
+.login input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.login button {
+    width: 100%;
+    padding: 12px;
+    background: #3b82f6;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login button:hover {
+    background: #2563eb;
+}
+/* =================                        / LOGIN ================= */
+
+/* =================                        DASHBOARD ================= */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #0f172a;
+    padding: 20px;
+    color: white;
+    position: fixed;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: #cbd5f5;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #1e293b;
+}
+
+.sidebar {
+    transition: all 0.3s ease;
+}
+
+/* Contenido */
+.content {
+    margin-left: 240px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1000px;   /* controla el ancho */
+}
+
+/* Centrar contenido */
+.content {
+    margin-left: 240px;
+    margin-right: auto;
+}
+
+/* Card ocupa todo el ancho disponible */
+.card {
+    width: 100%;
+}
+
+/* Tarjetas */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+/* =================                        / DASHBOARD ================= */
+
+/* =================                        FORMULARIO ================= */
+.form-card, .sistema {
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+}
+
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* FILA DOBLE */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* BOTÓN */
+.btn-primary {
+    /* width: 50%; */
+    padding: 12px;
+    background: #3b82f6;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #2563eb;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+
+.botones .btn-primary {
+    flex: 1;  /* se reparten el espacio automáticamente */
+}
+
+
+.botones {
+    display: flex;
+    gap: 10px; /* espacio entre botones */
+
+}
+.botones .btn-primary {
+    width: 50%; /* cada uno ocupa la mitad */
+}
+
+/* =================                        / FORMULARIO ================= */
+.footer {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
+}
+/* =================                        TABLA ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th {
+    background: #3b82f6;
+    color: white;
+    padding: 12px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+table tr:hover {
+    background: #e2e8f0;
+}
+
+/* Imágenes */
+table img {
+    border-radius: 6px;
+}
+
+/* Paginación */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 8px 12px;
+    background: #3b82f6;
+    color: white;
+    margin: 3px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background: #2563eb;
+}
+/* =================                        / TABLA ================= */
+
+.menu-btn {
+    display: none;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    
+}
+
+/* =================                        RESPONSIVE ================= */
+
+/* FIX GENERAL */
+/* body {
+    overflow-x: hidden; /* evita scroll horizontal */
+/*} */
+
+/* ================= DESKTOP ================= */
+.content {
+    margin-left: 240px;
+    padding: 30px;
+    width: calc(100% - 240px); /* evita que se pase */
+}
+
+/* Card nunca se desborda */
+.card {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+}
+
+/* ================= CELULAR ================= */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    /* Sidebar desaparece */
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 220px;
+        height: 100%;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    /* Cuando esté activo */
+    .sidebar.active {
+        left: 0;
+    }
+
+    /* Contenido ocupa todo */
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Formulario en una columna */
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Botones en una columna */
+    /* .botones {
+        flex-direction: column;
+    } */
+
+    /* Evita desbordes */
+    .card {
+        max-width: 100%;
+    }
+
+    /* Tabla responsive */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+/* =================                        / RESPONSIVE ================= */
