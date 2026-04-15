@@ -2,6 +2,7 @@ function toggleMenu() {
     document.querySelector('.sidebar').classList.toggle('active');
     document.getElementById('overlay').classList.toggle('active');
     document.querySelector('.menu-overlay').classList.toggle('hidden');
+    document.querySelector('.menu-btn').classList.toggle('hidden');
 }
 // document.addEventListener('DOMContentLoaded', function () {
 //   const sidebar = document.querySelector('.sidebar');

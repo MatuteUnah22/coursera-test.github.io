@@ -10,14 +10,13 @@
         <div class="layout">
             <div class="sidebar">
                 <h2>Panel</h2>
-                <a href="dashboard.php">Inicio</a>
-                <!-- <a href="historial.php">Reportes</a> -->
-                <a href="logout.php">Cerrar sesión</a>
+                <a href="dashboard.html">Inicio</a>                
+                <a href="../index_sistema.html">Cerrar sesión</a>
             </div>
 
             <div class="content">
                 <button class="menu-btn" onclick="toggleMenu()">☰</button>
-                <!-- <h1>Historial de reportes</h1> -->
+                
                 <h1>Historial de reportes del Politécnico Antonio Figaris Báes</h1>
 
                 <table>
@@ -30,20 +29,18 @@
                         <th>Imagen</th>
                     </tr>
 
-                    <?php while($r=$consulta->fetch_assoc()){ ?>
-                        <tr>
-                            <td><?php echo $r['id']; ?></td>
-                            <td><?php echo $r['area']; ?></td>
-                            <td><?php echo $r['descripcion']; ?></td>
-                            <td><?php echo $r['prioridad']; ?></td>
-                            <td><?php echo $r['fecha']; ?></td>
-                            <td>
-                                <?php if($r['imagen']){ ?>
-                                <img src="imagenes/<?php echo $r['imagen']; ?>" width="60">
-                                <?php } ?>
-                            </td>
-                        </tr>
-                    <?php } ?>
+                    
+                    <tr>
+                        <td>id</td>
+                        <td>area</td>
+                        <td>descripcion</td>
+                        <td>prioridad</td>
+                        <td>fecha</td>
+                        <td>
+                            <img src="imagenes/code.png" width="60">    
+                        </td>
+                    </tr>
+                    
                 </table>
 
                 <div class="pagination">
@@ -62,21 +59,7 @@
             </footer>
 
         </div>
-        <script>
-            function toggleMenu() {
-                document.querySelector('.sidebar').classList.toggle('active');
-            }
-
-            // Cerrar al hacer click fuera
-            document.addEventListener('click', function(e) {
-                const sidebar = document.querySelector('.sidebar');
-                const button = document.querySelector('.menu-btn');
-
-                if (!sidebar.contains(e.target) && !button.contains(e.target)) {
-                    sidebar.classList.remove('active');
-                }
-            });
-        </script>
+        <script src="js/script.js"></script>
 
     </body>
 </html>

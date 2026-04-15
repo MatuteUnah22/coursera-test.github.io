@@ -353,6 +353,7 @@ table img {
         background-attachment: fixed;
         min-height: 100vh;
     }
+    
      /* overlay oscuro detrás del sidebar */
     .sidebar {
         display: none;
