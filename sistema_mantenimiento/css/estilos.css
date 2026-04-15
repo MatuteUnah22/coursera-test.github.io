@@ -328,6 +328,20 @@ table img {
 
 /* ================= CELULAR ================= */
 @media (max-width: 768px) {
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ocupa toda la pantalla */
+    margin: 0;
+}
+
+    /* Contenedor del login */
+    .login {
+        width: 90%;
+        max-width: 350px;
+    }
+
     .menu-btn {
         display: block;
     }
@@ -349,12 +363,23 @@ table img {
     }
 
     /* Contenido ocupa todo */
+    /* .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    } */
+
     .content {
         margin-left: 0;
         width: 100%;
         padding: 15px;
-    }
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
     /* Formulario en una columna */
     .form-grid {
         grid-template-columns: 1fr;
@@ -363,7 +388,6 @@ table img {
     /* Botones en una columna */
     .botones {
         flex-direction: column;
-        width: 100%;
         align-items: center;
     }
 
