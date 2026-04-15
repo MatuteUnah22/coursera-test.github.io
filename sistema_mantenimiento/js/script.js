@@ -1,3 +1,16 @@
+function toggleMenu() {
+    document.querySelector('.sidebar').classList.toggle('active');
+}
+
+document.addEventListener('click', function(e) {
+    const sidebar = document.querySelector('.sidebar');
+    const button = document.querySelector('.menu-btn');
+
+    if (!sidebar.contains(e.target) && !button.contains(e.target)) {
+        sidebar.classList.remove('active');
+    }
+});
+
 function generarPDF(){
 
     const { jsPDF } = window.jspdf;
