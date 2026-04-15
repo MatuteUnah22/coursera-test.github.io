@@ -6,11 +6,28 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Fondo general */
-body {
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-    color: #656464;
+/* Asegura que toda la pantalla esté cubierta */
+html, body {
+    height: 100%;
+    margin: 0;
 }
+
+/* Fondo bien aplicado */
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b); /* o el tuyo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* CENTRADO REAL */
+.content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .layout {
     display: flex;
@@ -329,12 +346,12 @@ table img {
 /* ================= CELULAR ================= */
 @media (max-width: 768px) {
     body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* ocupa toda la pantalla */
-    margin: 0;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* ocupa toda la pantalla */
+        margin: 0;
+    }
 
     /* Contenedor del login */
     .login {
@@ -369,7 +386,7 @@ table img {
         padding: 15px;
     } */
 
-    .content {
+    /* .content {
         margin-left: 0;
         width: 100%;
         padding: 15px;
@@ -378,8 +395,15 @@ table img {
         justify-content: center;
         align-items: center;
         height: 100vh;
+    } */
+    .content {
+        padding: 20px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     /* Formulario en una columna */
     .form-grid {
         grid-template-columns: 1fr;
