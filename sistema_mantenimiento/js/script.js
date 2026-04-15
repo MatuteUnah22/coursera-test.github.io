@@ -1,14 +1,38 @@
+// function toggleMenu() {
+//     document.querySelector('.sidebar').classList.toggle('active');
+// }
+
+// document.addEventListener('click', function(e) {
+//     const sidebar = document.querySelector('.sidebar');
+//     const button = document.querySelector('.menu-btn');
+
+//     if (!sidebar.contains(e.target) && !button.contains(e.target)) {
+//         sidebar.classList.remove('active');
+//     }
+// });
+
 function toggleMenu() {
     document.querySelector('.sidebar').classList.toggle('active');
 }
 
-document.addEventListener('click', function(e) {
+// cerrar al hacer click fuera
+document.addEventListener('click', function (e) {
     const sidebar = document.querySelector('.sidebar');
     const button = document.querySelector('.menu-btn');
 
-    if (!sidebar.contains(e.target) && !button.contains(e.target)) {
+    const clickedInsideSidebar = sidebar.contains(e.target);
+    const clickedButton = button.contains(e.target);
+
+    if (!clickedInsideSidebar && !clickedButton) {
         sidebar.classList.remove('active');
     }
+});
+
+// cerrar al tocar un link del sidebar (IMPORTANTE en móvil)
+document.querySelectorAll('.sidebar a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.sidebar').classList.remove('active');
+    });
 });
 
 function generarPDF(){
