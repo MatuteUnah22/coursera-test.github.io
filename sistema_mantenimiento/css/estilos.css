@@ -397,11 +397,11 @@ table img {
         height: 100vh;
     } */
     .content {
-        padding: 20px;
-        min-height: 100vh;
+        min-height: 100dvh; /* clave moderna para móviles */
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 20px;
     }
 
     /* Formulario en una columna */
@@ -416,8 +416,11 @@ table img {
     }
 
     /* Evita desbordes */
-    .card {
+    /* .card {
         max-width: 100%;
+    } */
+    .card {
+        margin: auto;
     }
 
     /* Tabla responsive */
