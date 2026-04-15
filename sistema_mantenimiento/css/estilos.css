@@ -298,32 +298,23 @@ table img {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    
-}
-
 /* =================                        RESPONSIVE ================= */
 
-/* FIX GENERAL */
-/* body {
-    overflow-x: hidden; /* evita scroll horizontal */
-/*} */
-
 /* ================= DESKTOP ================= */
-.content {
+/* .content {
     margin-left: 240px;
     padding: 30px;
     width: calc(100% - 240px); /* evita que se pase */
-}
+/*} */
 
 /* Card nunca se desborda */
-.card {
+/* .card {
     width: 100%;
     max-width: 900px;
-}
+} */
 
 /* ================= TABLET ================= */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 
     .sidebar {
         width: 200px;
@@ -333,7 +324,7 @@ table img {
         margin-left: 200px;
         width: calc(100% - 200px);
     }
-}
+} */
 
 /* ================= CELULAR ================= */
 @media (max-width: 768px) {
@@ -370,9 +361,9 @@ table img {
     }
 
     /* Botones en una columna */
-    /* .botones {
+    .botones {
         flex-direction: column;
-    } */
+    }
 
     /* Evita desbordes */
     .card {
