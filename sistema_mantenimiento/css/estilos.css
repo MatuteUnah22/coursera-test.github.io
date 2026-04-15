@@ -363,6 +363,7 @@ table img {
     /* Botones en una columna */
     .botones {
         flex-direction: column;
+        align-items: center;
     }
 
     /* Evita desbordes */
