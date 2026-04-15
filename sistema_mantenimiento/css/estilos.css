@@ -353,7 +353,7 @@ table img {
         background-attachment: fixed;
         min-height: 100vh;
     }
-    
+
      /* overlay oscuro detrás del sidebar */
     .sidebar {
         display: none;
@@ -449,14 +449,34 @@ table img {
         margin-top: 60px; /* espacio por el botón */
     }
 
+    .layout h1 {
+        text-align: left;
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    
+    .layout {
+        padding: 15px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .layout > *:not(footer) {
+        flex: 1;
+    }
+
     .footer {
-    margin-top: 40px;
-    padding: 20px 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #94a3b8;
-    background-color: #0f172a;
-}
+        margin-top: 40px;
+        padding: 20px 15px;
+        text-align: center;
+        font-size: 13px;
+        color: #94a3b8;
+        background-color: #0f172a;
+    }
 
 
     /* .menu-btn {
