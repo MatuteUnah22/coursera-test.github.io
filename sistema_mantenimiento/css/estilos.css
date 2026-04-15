@@ -363,25 +363,7 @@ table img {
         width: 95%;
     }
     /* sidebar oculto */
-    /* .sidebar {
-        position: fixed;
-        left: -240px;
-        top: 0;
-        height: 100vh;
-        transition: 0.3s;
-        z-index: 1000;
-    }
-
-    .sidebar.active {
-        left: 0;
-    } */
-
-    /* contenido dashboard */
-    /* .dashboard-page .content {
-        margin-left: 0;
-        padding: 15px;
-        max-width: 100%;
-    } */
+    
 
     /* login no se toca */
     .login {
