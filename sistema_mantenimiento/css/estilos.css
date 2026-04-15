@@ -327,6 +327,12 @@ table img {
     color: #94a3b8;
 }
 
+.footer {
+    text-align: center;
+    padding: 15px;
+    /* color: rgb(198, 29, 29); */
+}
+
 /* ================= BOTÓN MENU ================= */
 .menu-btn {
     display: none;
@@ -358,20 +364,7 @@ table img {
     .sidebar {
         left: -240px;
     } 
-    /*
-    .sidebar {
-        position: fixed;
-        left: -240px;
-        top: 0;
-        height: 100vh;
-        width: 220px;
-        background: #0f172a;
-        padding: 20px;
-        color: white;
-        transition: left 0.3s ease;
-        z-index: 1000;
-    }
-    */
+    
     .sidebar.active {
         left: 0;
     }
@@ -453,14 +446,16 @@ table img {
         display: block;
     } */
 
+    /* 
     .footer {
         margin-top: 40px;
         padding: 15px;
         text-align: center;
         font-size: 13px;
         color: #94a3b8;
-        /* margin-left: 0;
+        margin-left: 0;
         width: 100%;
-        font-size: 11px; */
+        font-size: 11px; 
     }
+    */
 }
