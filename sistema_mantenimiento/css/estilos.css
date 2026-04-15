@@ -319,12 +319,35 @@ table img {
         left: 0;
     }
 
+    .dashboard h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin: 10px 0 15px 0;
+        display: block;
+    }
+
     .dashboard-page .content {
         margin-left: 0;
         width: 100%;
         padding: 15px;
     }
 
+    .dashboard {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .report-form {
+        width: 95%;
+    }
     /* sidebar oculto */
     /* .sidebar {
         position: fixed;
@@ -349,7 +372,7 @@ table img {
     /* login no se toca */
     .login {
         width: 92%;
-        max-width: 420px;
+        max-width: 460px;
         margin: 0;
     }
 
