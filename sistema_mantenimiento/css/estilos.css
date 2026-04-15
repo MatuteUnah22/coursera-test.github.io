@@ -129,11 +129,6 @@ body {
 }
 
 
-/* .content {
-    margin-left: 240px;
-    margin-right: auto;
-} */
-
 /* Card ocupa todo el ancho disponible */
 .card {
     width: 100%;
@@ -317,49 +312,21 @@ table img {
 
 /* =================                        RESPONSIVE ================= */
 
-/* ================= DESKTOP ================= */
-/* .content {
-    margin-left: 240px;
-    padding: 30px;
-    width: calc(100% - 240px); /* evita que se pase */
-/*} */
-
-/* Card nunca se desborda */
-/* .card {
-    width: 100%;
-    max-width: 900px;
-} */
-
-/* ================= TABLET ================= */
-/* @media (max-width: 1024px) {
-
-    .sidebar {
-        width: 200px;
-    }
-
-    .content {
-        margin-left: 200px;
-        width: calc(100% - 200px);
-    }
-} */
 
 /* ================= CELULAR ================= */
 @media (max-width: 768px) {
-    html, body {
-        height: 100%;
-        margin: 0;
-    }
-
     body {
-        display: grid;
-        place-items: center; /* 🔥 centrado perfecto */
-        min-height: 100dvh;
+        margin: 0;
+        min-height: 100vh; /* 🔥 cambia de dvh a vh */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .login {
-        margin-top: 0;
         width: 90%;
         max-width: 350px;
+        margin: 0; /* 🔥 importante */
     }
 }
 /* =================                        / RESPONSIVE ================= */
