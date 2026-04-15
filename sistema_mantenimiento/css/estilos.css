@@ -353,10 +353,23 @@ table img {
         margin: 0;
     } */
 
+    body {
+        min-height: 100dvh; /* mejor que 100vh en móvil */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
     /* Contenedor del login */
-    .login {
+    /* .login {
         width: 90%;
         max-width: 350px;
+    } */
+
+    .login {
+        padding: 25px;
+        border-radius: 12px;
     }
 
     .menu-btn {
