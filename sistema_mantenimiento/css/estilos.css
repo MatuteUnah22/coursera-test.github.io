@@ -357,6 +357,7 @@ table img {
     }
 
     .login {
+        margin-top: 0;
         width: 90%;
         max-width: 350px;
     }
