@@ -1,38 +1,42 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const sidebar = document.querySelector('.sidebar');
-  const button = document.querySelector('.menu-btn');
+function toggleMenu() {
+    document.querySelector('.sidebar').classList.toggle('active');
+    document.getElementById('overlay').classList.toggle('active');
+}
+// document.addEventListener('DOMContentLoaded', function () {
+//   const sidebar = document.querySelector('.sidebar');
+//   const button = document.querySelector('.menu-btn');
 
-  if (!sidebar || !button) return;
+//   if (!sidebar || !button) return;
 
-  // Función de toggle
-  window.toggleMenu = function () {
-    sidebar.classList.toggle('active');
-  };
+//   // Función de toggle
+//   window.toggleMenu = function () {
+//     sidebar.classList.toggle('active');
+//   };
 
-  // Enlazar botón si no está ya enlazado
-  button.addEventListener('click', function (e) {
-    e.stopPropagation();
-    toggleMenu();
-  });
+//   // Enlazar botón si no está ya enlazado
+//   button.addEventListener('click', function (e) {
+//     e.stopPropagation();
+//     toggleMenu();
+//   });
 
-  // Cerrar al hacer clic fuera (si el sidebar está abierto)
-  document.addEventListener('click', function (e) {
-    const clickedInsideSidebar = sidebar.contains(e.target);
-    const clickedButton = button.contains(e.target);
+//   // Cerrar al hacer clic fuera (si el sidebar está abierto)
+//   document.addEventListener('click', function (e) {
+//     const clickedInsideSidebar = sidebar.contains(e.target);
+//     const clickedButton = button.contains(e.target);
 
-    // Si no hizo clic dentro del sidebar ni en el botón, cerrar
-    if (!clickedInsideSidebar && !clickedButton) {
-      sidebar.classList.remove('active');
-    }
-  });
+//     // Si no hizo clic dentro del sidebar ni en el botón, cerrar
+//     if (!clickedInsideSidebar && !clickedButton) {
+//       sidebar.classList.remove('active');
+//     }
+//   });
 
-  // Cerrar al hacer clic en un enlace del sidebar (en móvil)
-  sidebar.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      sidebar.classList.remove('active');
-    });
-  });
-});
+//   // Cerrar al hacer clic en un enlace del sidebar (en móvil)
+//   sidebar.querySelectorAll('a').forEach(link => {
+//     link.addEventListener('click', () => {
+//       sidebar.classList.remove('active');
+//     });
+//   });
+// });
 
 // function toggleMenu() {
 //     document.querySelector('.sidebar').classList.toggle('active');
