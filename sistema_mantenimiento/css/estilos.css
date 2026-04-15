@@ -34,6 +34,13 @@ body {
 }
 
 /* ================= LOGIN ================= */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .login {
     width: 350px;
     margin: 100px auto;
@@ -75,6 +82,13 @@ body {
 }
 
 /* ================= DASHBOARD ================= */
+.dashboard-page .content {
+    margin-left: 240px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1000px;
+}
+
 .container {
     display: flex;
 }
@@ -109,13 +123,13 @@ body {
 }
 
 /* CONTENIDO DASHBOARD */
-.content {
+/* .content {
     margin-left: 240px;
     padding: 30px;
     width: 100%;
     max-width: 1000px;
     flex: 1;
-}
+} */
 
 /* CARDS */
 .card {
@@ -279,7 +293,7 @@ table img {
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
-    /* SIDEBAR OCULTO POR DEFECTO */
+    /* sidebar oculto */
     .sidebar {
         position: fixed;
         left: -240px;
@@ -289,36 +303,40 @@ table img {
         z-index: 1000;
     }
 
-    /* clase para mostrar sidebar */
     .sidebar.active {
         left: 0;
     }
 
-    /* contenido ocupa toda la pantalla */
-    .content {
+    /* contenido dashboard */
+    .dashboard-page .content {
         margin-left: 0;
         padding: 15px;
         max-width: 100%;
     }
 
-    /* botón menú visible */
-    .menu-btn {
-        display: block;
+    /* login no se toca */
+    .login {
+        width: 90%;
+        margin: 0;
     }
 
-    /* tablas scroll horizontal */
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    /* formularios más cómodos */
+    /* formularios */
     .form-row {
         flex-direction: column;
     }
 
     .botones {
         flex-direction: column;
+    }
+
+    /* tablas */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .menu-btn {
+        display: block;
     }
 }
