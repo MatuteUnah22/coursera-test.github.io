@@ -345,20 +345,91 @@ table img {
 
 /* ================= CELULAR ================= */
 @media (max-width: 768px) {
-    html, body {
-        height: 100%;
+    body {
+        min-height: 100dvh; /* mejor que 100vh en móvil */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0;
     }
 
-    body {
-        display: grid;
-        place-items: center; /* 🔥 centrado perfecto */
-        min-height: 100dvh;
-    }
+    /* Contenedor del login */
+    /* .login {
+        width: 90%;
+        max-width: 350px;
+    } */
 
+    /* .login {
+        padding: 25px;
+        border-radius: 12px;
+    } */
     .login {
         width: 90%;
         max-width: 350px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    /* Sidebar desaparece */
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 220px;
+        height: 100%;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    /* Cuando esté activo */
+    .sidebar.active {
+        left: 0;
+    }
+
+    /* Contenido ocupa todo */
+    /* .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    } */
+    .content {
+        min-height: 100dvh; /* clave moderna para móviles */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Formulario en una columna */
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Botones en una columna */
+    .botones {
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    /* Evita desbordes */
+    /* .card {
+        max-width: 100%;
+    } */
+    .card {
+        margin: auto;
+    }
+
+    /* Tabla responsive */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
 /* =================                        / RESPONSIVE ================= */
