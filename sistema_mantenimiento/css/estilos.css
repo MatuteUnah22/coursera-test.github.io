@@ -1,4 +1,4 @@
-/* Reset */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +6,26 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Asegura que toda la pantalla esté cubierta */
 html, body {
     height: 100%;
     margin: 0;
 }
 
-/* Fondo bien aplicado */
+/* ================= BACKGROUND ================= */
 body {
-    background: linear-gradient(135deg, #0f172a, #1e293b); /* o el tuyo */
+    background: linear-gradient(135deg, #0f172a, #1e293b);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
 }
 
-/* CENTRADO REAL */
+/* ================= LAYOUT GENERAL ================= */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Centrado general reutilizable */
 .content {
     min-height: 100vh;
     display: flex;
@@ -28,15 +33,7 @@ body {
     align-items: center;
 }
 
-
-.layout {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* ocupa toda la pantalla */
-}
-
-
-/* =================                        LOGIN ================= */
+/* ================= LOGIN ================= */
 .login {
     width: 350px;
     margin: 100px auto;
@@ -76,14 +73,13 @@ body {
 .login button:hover {
     background: #2563eb;
 }
-/* =================                        / LOGIN ================= */
 
-/* =================                        DASHBOARD ================= */
+/* ================= DASHBOARD ================= */
 .container {
     display: flex;
 }
 
-/* Sidebar */
+/* SIDEBAR */
 .sidebar {
     width: 220px;
     height: 100vh;
@@ -91,6 +87,7 @@ body {
     padding: 20px;
     color: white;
     position: fixed;
+    transition: all 0.3s ease;
 }
 
 .sidebar h2 {
@@ -111,41 +108,28 @@ body {
     background: #1e293b;
 }
 
-.sidebar {
-    transition: all 0.3s ease;
-}
-
-/* Contenido */
+/* CONTENIDO DASHBOARD */
 .content {
     margin-left: 240px;
     padding: 30px;
     width: 100%;
-    max-width: 1000px;   /* controla el ancho */
+    max-width: 1000px;
+    flex: 1;
 }
 
-/* Centrar contenido */
-.content {
-    flex: 1; /* empuja el footer hacia abajo */
-}
-
-
-/* Card ocupa todo el ancho disponible */
+/* CARDS */
 .card {
     width: 100%;
-}
-
-/* Tarjetas */
-.card {
     background: white;
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-/* =================                        / DASHBOARD ================= */
 
-/* =================                        FORMULARIO ================= */
-.form-card, .sistema {
+/* ================= FORMULARIOS ================= */
+.form-card,
+.sistema {
     max-width: 700px;
     margin: auto;
 }
@@ -169,8 +153,8 @@ body {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #cbd5e1;
-    transition: 0.2s;
     font-size: 14px;
+    transition: 0.2s;
 }
 
 .form-group input:focus,
@@ -186,7 +170,7 @@ body {
     height: 100px;
 }
 
-/* FILA DOBLE */
+/* FILAS */
 .form-row {
     display: flex;
     gap: 15px;
@@ -196,9 +180,8 @@ body {
     flex: 1;
 }
 
-/* BOTÓN */
+/* BOTONES */
 .btn-primary {
-    /* width: 50%; */
     padding: 12px;
     background: #3b82f6;
     border: none;
@@ -218,36 +201,11 @@ body {
     gap: 10px;
 }
 
-
 .botones .btn-primary {
-    flex: 1;  /* se reparten el espacio automáticamente */
+    flex: 1;
 }
 
-
-.botones {
-    display: flex;
-    gap: 10px; /* espacio entre botones */
-
-}
-.botones .btn-primary {
-    width: 50%; /* cada uno ocupa la mitad */
-}
-
-/* =================                        / FORMULARIO ================= */
-.footer {
-    margin-top: 40px;
-    padding: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #94a3b8;
-}
-
-.footer {
-    text-align: center;
-    padding: 15px;
-    /* color: rgb(198, 29, 29); */
-}
-/* =================                        TABLA ================= */
+/* ================= TABLAS ================= */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -275,12 +233,11 @@ table tr:hover {
     background: #e2e8f0;
 }
 
-/* Imágenes */
 table img {
     border-radius: 6px;
 }
 
-/* Paginación */
+/* PAGINACIÓN */
 .pagination {
     margin-top: 20px;
 }
@@ -297,8 +254,17 @@ table img {
 .pagination a:hover {
     background: #2563eb;
 }
-/* =================                        / TABLA ================= */
 
+/* ================= FOOTER ================= */
+.footer {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+/* ================= BOTÓN MENU ================= */
 .menu-btn {
     display: none;
     background: #3b82f6;
@@ -310,23 +276,49 @@ table img {
     cursor: pointer;
 }
 
-/* =================                        RESPONSIVE ================= */
-
-
-/* ================= CELULAR ================= */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-    body {
-        margin: 0;
-        min-height: 100vh; /* 🔥 cambia de dvh a vh */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    /* SIDEBAR OCULTO POR DEFECTO */
+    .sidebar {
+        position: fixed;
+        left: -240px;
+        top: 0;
+        height: 100vh;
+        transition: 0.3s;
+        z-index: 1000;
     }
 
-    .login {
-        width: 90%;
-        max-width: 350px;
-        margin: 0; /* 🔥 importante */
+    /* clase para mostrar sidebar */
+    .sidebar.active {
+        left: 0;
+    }
+
+    /* contenido ocupa toda la pantalla */
+    .content {
+        margin-left: 0;
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    /* botón menú visible */
+    .menu-btn {
+        display: block;
+    }
+
+    /* tablas scroll horizontal */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* formularios más cómodos */
+    .form-row {
+        flex-direction: column;
+    }
+
+    .botones {
+        flex-direction: column;
     }
 }
-/* =================                        / RESPONSIVE ================= */
