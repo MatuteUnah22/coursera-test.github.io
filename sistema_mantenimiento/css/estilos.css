@@ -119,8 +119,22 @@ body {
     background: #0f172a;
     padding: 20px;
     color: white;
+    transition: left 0.3s ease;
+    z-index: 1000;
 }
-/* .sidebar {
+
+/*
+.sidebar {
+    width: 220px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background: #0f172a;
+    padding: 20px;
+    color: white;
+}
+ .sidebar {
     width: 220px;
     position: fixed;
     left: 0;
@@ -327,12 +341,11 @@ table img {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-    /* .sidebar {
+     
+    .sidebar {
         left: -240px;
-        transition: left 0.3s ease;
-        z-index: 1000;
-    } */
-
+    } 
+    /*
     .sidebar {
         position: fixed;
         left: -240px;
@@ -345,7 +358,7 @@ table img {
         transition: left 0.3s ease;
         z-index: 1000;
     }
-
+    */
     .sidebar.active {
         left: 0;
     }
