@@ -107,13 +107,7 @@ body {
     min-height: 100vh;
     padding: 30px;
 }
-/* 
-.dashboard-page .content {
-    margin-left: 240px;
-    padding: 30px;
-    width: 100%;
-    max-width: 1000px;
-} */
+
 
 /* SIDEBAR FIJA */
 .sidebar {
@@ -154,13 +148,13 @@ body {
 }
 
 /* CONTENIDO DASHBOARD */
-/* .content {
+.content {
     margin-left: 240px;
     padding: 30px;
     width: 100%;
     max-width: 1000px;
     flex: 1;
-} */
+}
 
 /* CARDS */
 .card {
