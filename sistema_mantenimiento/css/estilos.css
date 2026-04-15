@@ -439,6 +439,10 @@ table img {
         z-index: 1100;
     }
 
+    .menu-btn.hidden {
+        display: none;
+    }
+
     .sistema {
         font-size: 18px;
         text-align: center;
