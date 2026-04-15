@@ -452,4 +452,10 @@ table img {
     /* .menu-btn {
         display: block;
     } */
+
+    .footer {
+        margin-left: 0;
+        width: 100%;
+        font-size: 11px;
+    }
 }
