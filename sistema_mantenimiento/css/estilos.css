@@ -87,6 +87,8 @@ body {
     border: none;
     color: white;
     border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
     cursor: pointer;
     transition: 0.3s;
 }
