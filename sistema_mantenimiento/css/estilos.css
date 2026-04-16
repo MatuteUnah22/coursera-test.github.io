@@ -67,11 +67,11 @@ body {
     text-align: center;
 }
 
-.login .h2 {
+.login h2 {
     margin-bottom: 20px;
 }
 
-.login .input {
+.login input {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
@@ -80,7 +80,7 @@ body {
     outline: none;
 }
 
-.login .btn-primary {
+.login btn-primary {
     width: 100%;
     padding: 12px;
     background: #3b82f6;
@@ -93,7 +93,7 @@ body {
     margin-top: 50px;
 }
 
-.login .btn-primary:hover {
+.login btn-primary:hover {
     background: #2563eb;
 }
 
@@ -125,11 +125,11 @@ body {
     z-index: 1000;
 }
 
-.sidebar .h2 {
+.sidebar h2 {
     margin-bottom: 30px;
 }
 
-.sidebar .a {
+.sidebar a {
     display: block;
     color: #cbd5f5;
     text-decoration: none;
