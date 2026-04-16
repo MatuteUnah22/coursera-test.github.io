@@ -89,17 +89,12 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    /* text-decoration: none;
-    margin-top: 50px; */
+    text-decoration: none;
+    margin-top: 50px;
 }
 
 .login .btn-primary:hover {
     background: #2563eb;
-}
-
-.login a {
-    margin-top: 15px !important;
-    text-decoration: none !important;
 }
 
 /* ================= DASHBOARD ================= */
