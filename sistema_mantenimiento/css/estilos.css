@@ -67,11 +67,11 @@ body {
     text-align: center;
 }
 
-.login h2 {
+.login .h2 {
     margin-bottom: 20px;
 }
 
-.login input {
+.login .input {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
@@ -87,14 +87,19 @@ body {
     border: none;
     color: white;
     border-radius: 8px;
-    text-decoration: none;
-    margin-top: 50px;
     cursor: pointer;
     transition: 0.3s;
+    /* text-decoration: none;
+    margin-top: 50px; */
 }
 
 .login .btn-primary:hover {
     background: #2563eb;
+}
+
+.login a {
+    margin-top: 15px !important;
+    text-decoration: none !important;
 }
 
 /* ================= DASHBOARD ================= */
@@ -125,11 +130,11 @@ body {
     z-index: 1000;
 }
 
-.sidebar h2 {
+.sidebar .h2 {
     margin-bottom: 30px;
 }
 
-.sidebar a {
+.sidebar .a {
     display: block;
     color: #cbd5f5;
     text-decoration: none;
@@ -377,8 +382,6 @@ table img {
     .report-form {
         width: 95%;
     }
-    /* sidebar oculto */
-    
 
     /* login no se toca */
     .login {
@@ -444,21 +447,6 @@ table img {
         margin-bottom: 15px;
         color: white;
     }
-
-    /* .footer {
-        width: 100%;
-        margin-left: 0;
-        box-sizing: border-box;
-    } */
-    /* .layout {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    .layout > *:not(footer) {
-        flex: 1;
-    } */
 
     .footer {
         margin-top: 40px;
