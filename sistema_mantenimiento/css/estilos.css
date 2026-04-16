@@ -80,7 +80,7 @@ body {
     outline: none;
 }
 
-.login button {
+.login btn-primary {
     width: 100%;
     padding: 12px;
     background: #3b82f6;
@@ -91,7 +91,7 @@ body {
     transition: 0.3s;
 }
 
-.login button:hover {
+.login btn-primary:hover {
     background: #2563eb;
 }
 
@@ -122,36 +122,6 @@ body {
     transition: left 0.3s ease;
     z-index: 1000;
 }
-
-/*
-.sidebar {
-    width: 220px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    background: #0f172a;
-    padding: 20px;
-    color: white;
-}
- .sidebar {
-    width: 220px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-} */
-
-/* SIDEBAR */
-/* .sidebar {
-    width: 220px;
-    height: 100vh;
-    background: #0f172a;
-    padding: 20px;
-    color: white;
-    position: fixed;
-    transition: all 0.3s ease;
-} */
 
 .sidebar h2 {
     margin-bottom: 30px;
